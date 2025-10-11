@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
-import axiosInstance from '../instances/Instance';
-import validation from '../helperFile';
+import axiosInstance from '../instances/Instance.js';
+import validation from '../helperFile.js';
 import uImg from '../assets/user.svg';
 import mail from '../assets/mail.svg';
 import passkey from '../assets/passkey.svg'

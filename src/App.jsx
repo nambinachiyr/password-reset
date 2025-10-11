@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
-import LogIn from './pages/LogIn'
-import Forget_PW from './pages/Forget_PW'
-import ResetPage from './pages/ResetPage'
-import CreateAccount from './pages/CreateAccount'
+import LogIn from './pages/LogIn.jsx'
+import Forget_PW from './pages/Forget_PW.jsx'
+import ResetPage from './pages/ResetPage.jsx'
+import CreateAccount from './pages/CreateAccount.jsx'
 
 // Routes with path
 const routes = [

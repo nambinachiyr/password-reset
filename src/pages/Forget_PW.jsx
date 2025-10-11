@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Globel } from "../GlobelContext"
+import { Globel } from "../GlobelContext.jsx"
 import axiosInstance from "../instances/Instance"
-import validation from "../helperFile"
+import validation from "../helperFile.js"
 import mail from '../assets/mail.svg';
 import { Link } from "react-router";
 

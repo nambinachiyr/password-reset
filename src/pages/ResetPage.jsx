@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router'
-import axiosInstance from '../instances/Instance'
+import axiosInstance from '../instances/Instance.js'
 import passkey from '../assets/passkey.svg'
-import validation from '../helperFile'
+import validation from '../helperFile.js'
 
 const ResetPage = () => {
 const [password1,setPassword1] = useState('')
