@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   server:{
     proxy:{
-      '/api':'http://localhost:3002'
+      '/api':'https://password-reset-iwfv.onrender.com'
     },
   },
 })
