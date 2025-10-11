@@ -25,6 +25,7 @@ const [pass2,setPass2] = useState(false)
          return
       }
       setPass2(false)
+      setPass1(false)
       const query = window.location.search
       const url = new URLSearchParams(query)
       const rs = url.get('rs')
