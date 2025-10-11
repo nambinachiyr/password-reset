@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body{
+    background-image: url('/src/assets/pexels-pixabay-531880.jpg');
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    
+}
+#root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes spin-slow{
+    from{
+        transform: (0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.animate-spin-slow{
+   animation: spin-slow 3s linear infinite;
+}
