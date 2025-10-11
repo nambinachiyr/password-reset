@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = 'http://localhost:3002/api';
+const baseURL = 'https://password-reset-m6lh.onrender.com/api';
 const axiosInstance = axios.create({
    baseURL,
    headers:{
