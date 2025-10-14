@@ -12,15 +12,15 @@ const routes = [
         element:<LogIn/>
     },
     {
-        path:'createaccount',
+        path:'/createaccount',
         element:<CreateAccount />
     },
     {
-        path:'forgetpassword',
+        path:'/forgetpassword',
         element:<Forget_PW/>
     },
     {
-        path:'password_reset?',
+        path:'/password_reset?',
         element:<ResetPage/>
     }
 ]
