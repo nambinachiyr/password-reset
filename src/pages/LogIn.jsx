@@ -32,9 +32,9 @@ const LogIn = () => {
     try {    
       setErE(false)  
       setErP(false)
-      const CreateUser = await axiosInstance.post('/login', {
-        emailL,
-        pwL,
+      const CreateUser = await axiosInstance.post('/log', {
+        email:emailL,
+        password:pwL,
       });
       const res = await CreateUser.data;
       console.log(res);
