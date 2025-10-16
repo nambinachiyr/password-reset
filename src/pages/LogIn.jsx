@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import mail from '../assets/mail.svg';
 import passkey from '../assets/passkey.svg'
 import { useState } from 'react';
@@ -6,7 +6,7 @@ import axiosInstance from '../instances/Instance';
 import validation from '../helperFile';
 
 const LogIn = () => {
-
+  const navi = useNavigate()
   const[emailL,setEmailL] = useState('')
   const[pwL,setPwL]  = useState('')
   const[erE,setErE] = useState(false)
@@ -42,7 +42,9 @@ const LogIn = () => {
       alert(res.message);
       setEmailL('')
       setPwL('')
+       navi('/dashboard')
     } catch (err) {
+      console.log(err.response?.data?.message)
       setError(err?.response?.data?.message)
     }
     
@@ -78,7 +80,8 @@ const LogIn = () => {
           />
           <img src={passkey} alt="key" />
         </div>
-        {erP&&<span className='text-sm -mt-4  text-red-600 '>{pr}</span>}
+        {erP&&<span className='text-sm -mt-4  text-red-600 '>{pr}</span>||
+        error&&<span className='text-sm -mt-4  text-red-600 '>{error}</span>}
         <div className='text-cyan-800 my-3'>
           <Link to={'/forgetpassword'} className='mt-3 font-medium hover:underline'>forget password</Link>
         </div>

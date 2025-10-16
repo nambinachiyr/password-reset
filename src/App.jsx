@@ -4,6 +4,7 @@ import LogIn from './pages/LogIn.jsx'
 import Forget_PW from './pages/Forget_PW.jsx'
 import ResetPage from './pages/ResetPage.jsx'
 import CreateAccount from './pages/CreateAccount.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 
 // Routes with path
 const routes = [
@@ -22,6 +23,10 @@ const routes = [
     {
         path:'/password_reset?',
         element:<ResetPage/>
+    },
+    {
+        path:'/dashboard',
+        element:<Dashboard/>
     }
 ]
 const App = () => {
